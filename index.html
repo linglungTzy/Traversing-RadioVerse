@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Traversing RadioVerse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing Radioverse</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700">
     <style>
         body {
@@ -21,10 +21,9 @@
         }
         
         .button {
-            width: 100vw;
-            /* 100% viewport width */
-            height: 50vh;
-            /* 50% viewport height */
+            width: 100%;
+            height: calc(50vh + env(safe-area-inset-top, 0) + env(safe-area-inset-bottom, 0));
+            /* Adjusted height */
             display: flex;
             justify-content: center;
             align-items: center;

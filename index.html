@@ -10,7 +10,6 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -61,10 +60,53 @@
             transform: translateY(-50%);
             display: none;
         }
+        
+        .navbar {
+            background: #222222;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            padding: 10px 0;
+        }
+        
+        .navbar-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        
+        .navbar-logo img {
+            margin: 0 60px;
+            /* Adjust the margin to control spacing between logos */
+        }
+    </style>
+
     </style>
 </head>
 
+
+<div class="navbar">
+    <div class="container">
+        <div class="navbar-center">
+            <div class="navbar-logo">
+                <a href="http://www.bvoiceradio.com">
+                    <img height="36" src="logounyil.png" />
+                </a>
+            </div>
+            <div class="navbar-logo">
+                <img height="36" src="seminar.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <body>
+
+
+
+
     <div class="button orange" onclick="recordVote('orange')">Click to Vote Orange</div>
     <div class="button blue" onclick="recordVote('blue')">Click to Vote Blue</div>
     <div class="hidden message" id="message"></div>
